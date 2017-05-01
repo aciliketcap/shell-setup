@@ -1,6 +1,6 @@
 [user]
-	email = aciliketcap@gmail.com
-	name = Sinan Akpolat
+	email = some-mail
+	name = some-name
 [core]
 	editor = vim
 	pager = less -m
