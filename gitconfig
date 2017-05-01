@@ -1,0 +1,10 @@
+[user]
+	email = aciliketcap@gmail.com
+	name = Sinan Akpolat
+[core]
+	editor = vim
+	pager = less -m
+[color]
+	ui = auto
+[push]
+	default = simple
