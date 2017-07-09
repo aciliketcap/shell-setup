@@ -22,6 +22,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
 "color scheme
 Plugin 'jnurmine/Zenburn'
+"NERDtree fs viewer
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
