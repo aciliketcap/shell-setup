@@ -1,7 +1,8 @@
+sudo pacman -S --needed tmux
 mkdir -p ~/.tmux/plugins
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm 
 #setup xsel or xclip, required for tmux-yank
-sudo zypeer install xclip
+sudo pacman -S xclip
 #sudo apt install xclip
 cp tmux.conf ~/.tmux.conf
 tmux source ~/.tmux.conf
