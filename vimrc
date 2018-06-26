@@ -29,6 +29,16 @@ Plugin 'scrooloose/nerdtree'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+"enable mouse through tmux too
+set mouse+=a
+if &term =~ '^screen'
+	" tmux knows the extended mouse mode
+	set ttymouse=xterm2
+endif
+
+"map NERDTree stuff
+nmap <C-N> :NERDTreeToggle<CR>
+
 "key remaps
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
