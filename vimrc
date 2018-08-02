@@ -24,6 +24,10 @@ Plugin 'nvie/vim-flake8'
 Plugin 'jnurmine/Zenburn'
 "NERDtree fs viewer
 Plugin 'scrooloose/nerdtree'
+"FZF fuzzy finding
+"You also need to get ag (the_silver_searcher)
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
