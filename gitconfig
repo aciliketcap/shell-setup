@@ -4,6 +4,8 @@
 [core]
 	editor = vim
 	pager = less -m
+[merge]
+	tool = kdiff3
 [color]
 	ui = auto
 [push]
