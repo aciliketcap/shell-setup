@@ -1,4 +1,4 @@
-sudo pacman -S --needed tmux
+#sudo pacman -S --needed tmux #for Arch
 mkdir -p ~/.tmux/plugins
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm 
 #setup xsel or xclip, required for tmux-yank

@@ -1,4 +1,4 @@
-sudo pacman -S --needed vim python2
+#sudo pacman -S --needed vim python2 #for Arch, TODO: change to python 3
 mkdir -p ~/.vim/bundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cp vimrc ~/.vimrc

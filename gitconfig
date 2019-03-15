@@ -4,6 +4,7 @@
 [core]
 	editor = vim
 	pager = less -m
+	#autocrlf = true #for WSL
 [merge]
 	tool = kdiff3
 [color]
