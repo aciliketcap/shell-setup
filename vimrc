@@ -72,7 +72,7 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.cpp,*.h,*.hpp
 set encoding=utf-8
 
 "python virtualenv for autocomplete
-py << EOF
+py3 << EOF
 import os
 import sys
 if 'VIRTUAL_ENV' in os.environ:
