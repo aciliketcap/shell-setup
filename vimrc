@@ -28,6 +28,8 @@ Plugin 'scrooloose/nerdtree'
 "You also need to get ag (the_silver_searcher)
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+" yaml plugin
+Plugin 'mrk21/yaml-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -78,7 +80,7 @@ import sys
 if 'VIRTUAL_ENV' in os.environ:
   project_base_dir = os.environ['VIRTUAL_ENV']
   activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-  execfile(activate_this, dict(__file__=activate_this))
+  exec(compile(open(activate_this, "rb").read(), activate_this, 'exec'), dict(__file__=activate_this))
 EOF
 
 "python auto-complete
@@ -88,6 +90,10 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 "python syntax highlight
 let python_highlight_all=1
 syntax on
+
+"yaml
+au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=indent
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 "set colorscheme
 colorscheme zenburn
